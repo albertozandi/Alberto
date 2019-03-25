@@ -15,6 +15,9 @@ class GroupSerializer(serializers.HyperlinkedModelSerializer):
         fields = ('url', 'name')
 
 class CusisineSerializer(serializers.HyperlinkedModelSerializer):
+    """
+    This is the cuisine serialiser that specifies which attributes are used in the REST API.
+    """
     class Meta:
         model = Cuisine
         fields = ('name', 'description', 'price')
